@@ -1,0 +1,14 @@
+:root {
+  --primary-brown: #9b5a2e;
+  --gold: #f2c46d;
+  --light-gold: #f6e3b4;
+  --dark: #1f1f1a;
+  --background: #f9f6f1;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: var(--background);
+  color: var(--dark);
+}
