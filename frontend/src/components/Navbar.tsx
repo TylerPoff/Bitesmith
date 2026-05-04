@@ -6,6 +6,15 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState<boolean>(window.innerWidth > 600)
 
     return (
+        <>
+        <button
+            className="mobile-menu-toggle"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label={isOpen ? "Collapse navigation" : "Expand navigation"}
+        >
+            {isOpen ? "×" : "☰"}
+        </button>
+
         <nav className={isOpen ? "navbar" : "navbar collapsed"}>
             <button className="navbar-toggle" 
             onClick={() => setIsOpen(!isOpen)} 
@@ -39,5 +48,7 @@ export default function Navbar() {
                 <p>2026</p>
             </div>
         </nav>
+        </>
+        
     )
 }
